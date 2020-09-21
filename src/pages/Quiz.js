@@ -13,7 +13,8 @@ function Quiz() {
     <div className="quiz__container">
     
     <div className="quiz__heading">
-    <h1>Specialty Quiz</h1>
+    <h1>Tes Spesialis</h1>
+    <h3>Cari tahu spesialis apa yang cocok untukmu</h3>
     </div>
       <section>
         {Object.keys(questionsBank).map((index, question) => {
