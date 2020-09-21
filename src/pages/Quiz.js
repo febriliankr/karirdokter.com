@@ -1,22 +1,27 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Button from "../components/Button";
+import React, { useState } from "react";
 import Question from "../components/Question";
 import questions from "./data/quizData";
 
 function Quiz() {
-  console.log("questions", questions);
+
+  const [answers, setAnswers] = useState({
+    1: ''
+  });
+
+  //console.log("questions", questions);
 
   return (
     <div className="home__container">
       <section>
-        <Link>Begin Quiz!</Link>
+        
         {Object.keys(questions).map((index, question) => {
-          console.log("question", questions[index].options);
+          //console.log("question", questions[index].options);
           const specificOptions = questions[index].options;
           return (
             <>
               <Question
+                answers={answers}
+                setAnswers={setAnswers}
                 number={index}
                 question={questions[index].question}
                 options={specificOptions}
@@ -24,6 +29,8 @@ function Quiz() {
             </>
           );
         })}
+
+        {JSON.stringify(answers)}
       </section>
     </div>
   );

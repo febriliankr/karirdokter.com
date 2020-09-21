@@ -1,16 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Button from '../components/Button'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
-    return (
-        <div className="home__container">
-            <section>
-            <h1>Hello this is home</h1>
-            <Link to="/quiz">Start Quiz ›</Link>
-            </section>
+  return (
+    <div className="home__container">
+      <section>
+        <h1>Membantu menentukan karir dokter anda</h1>
+        <div className="links">
+          <Link to="/quiz">Quiz Spesialis ›</Link>
+          <Link to="/lowongan">Info Lowongan Kerja ›</Link>
         </div>
-    )
+      </section>
+    </div>
+  );
 }
 
-export default Home
+export default Home;

@@ -13,13 +13,17 @@
     color: $text-color;
     line-height: 1.5;
 
-    a {
-      color: $text-link;
-      text-decoration: none;
-      font-size: 19px;
+    .links {
+      display: flex;
+      a {
+        color: $text-link;
+        text-decoration: none;
+        font-size: 19px;
+        padding: 0px 20px;
 
-      &:hover {
-        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -35,33 +39,35 @@
   margin: 0 auto 50px;
   padding: 10px 40px;
 
-  .question__number{
+  .question__number {
     font-size: 14px;
     font-weight: 400;
-
   }
 
   .options-container {
-      display: flex;
-      flex-direction: column;
-      padding: 10px 0 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 50px;
 
-      .option {
-          color: $text-color;
-          text-decoration: none;
-          font-size: 19px;
-          margin-bottom: 10px;
-          cursor: pointer;
-    
-          &:hover {
-            color: $text-link;
-          }
+    .option {
+      color: $text-color;
+      text-decoration: none;
+      font-size: 17px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+      max-width: 30%;
+      padding: 10px 18px 10px;
+      border-radius: 5px;
+      border: 2px solid white;
 
-          .active {
-            background-color: $text-link;
-            color: white;
-          }
-
+      &:hover {
+        border: 2px solid $text-link;
       }
+    }
+
+    .option-active {
+      border: 2px solid $text-link;
+    }
   }
 }
