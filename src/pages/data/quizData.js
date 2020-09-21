@@ -121,6 +121,36 @@ const questions = [
     question: "Apakah kamu merasa suka membela diri?",
     options: ["Ya", "Tidak"],
   }, 
+  {
+    section: "Section 3C",
+    question: "Kamu suka",
+    options: ["Bekerja dengan orang", "Merawat dengan orang"],
+  }, 
+  {
+    section: "Section 3C",
+    question: "Kamu suka",
+    options: ["Bekerja secara luas", "Bekerja secara spesifik"],
+  }, 
+  {
+    section: "Section 3C",
+    question: "Kamu suka",
+    options: ["Terlibat dalam kehidupan seseorang", "Tidak terlalu terlibat dalam kehidupan seseorang"],
+  }, 
+  {
+    section: "Section 3C",
+    question: "Kamu suka",
+    options: ["Menangani pasien pertama kali", "Menangani pasien rujukan"],
+  }, 
+  {
+    section: "Section 3C",
+    question: "Kamu suka",
+    options: ["Menangani pasien dalam jangka panjang", "Menangani pasien dalam jangka pendek/langsung"],
+  }, 
+  {
+    section: "Section 3C",
+    question: "Kamu suka",
+    options: ["Menangani masalah umum", "Menangani masalah tidak umum (spesifik)"],
+  }, 
   
   
   

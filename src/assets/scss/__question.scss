@@ -5,18 +5,37 @@
   background-color: #ffffff;
   text-align: left;
   width: 800px;
+  max-width: 100%;
   margin: 0 auto 50px;
   padding: 40px 40px 10px;
 
-  .question__title{
-        margin: 0 0 0;
+  @media (max-width: $breakpoint-iphone) {
+    width: calc(90%);
+    margin: 0 auto 0;
+    padding: 10px 5px 0px 10px;
+    font-size: 12px;
+    background-color: transparent;
+    border: 0px solid #f3f3f3;
+  }
+
+  .question__title {
+    margin: 10px 0 10px;
+    padding: 10px auto 10px;
+    font-weight: 500;
+    @media (max-width: $breakpoint-iphone) {
+    font-weight: 400;
+    }
   }
 
   .question__description {
     font-size: 14px;
     font-style: italic;
     color: $text-muted;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    @media (max-width: $breakpoint-iphone) {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
   }
 
   .answered {
@@ -36,14 +55,17 @@
     .option {
       color: $text-color;
       text-decoration: none;
-      font-size: 17px;
+      font-size: 16px;
       margin-bottom: 12px;
       cursor: pointer;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
       padding: 10px 18px 10px;
       border-radius: 5px;
-
       border: 2px solid white;
+
+      @media (max-width: $breakpoint-iphone) {
+        padding: 10px 10px 10px;
+    }
 
       &:hover {
         border: 2px solid $text-link;
@@ -51,15 +73,21 @@
     }
 
     .option-active {
-        border: 2px solid $text-link;
-      }
+      border: 2px solid $text-link;
+    }
 
     .wideasf {
       max-width: 40%;
+      @media (max-width: $breakpoint-iphone) {
+        max-width: 100%;
+      }
     }
 
     .smallasf {
       max-width: 100px;
+      @media (max-width: $breakpoint-iphone) {
+        max-width: 100%;
+      }
     }
   }
 }

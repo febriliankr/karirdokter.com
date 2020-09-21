@@ -14,6 +14,11 @@
     align-items: center;
     margin-left: 30px;
 
+    img {
+      max-width: 30px;
+      margin-right: 5px;
+    }
+
     a {
       text-decoration: none;
       color: $text-color;
@@ -32,6 +37,10 @@
     align-items: center;
     list-style-type: none;
     margin-right: 20px;
+
+    @media (max-width: $breakpoint-iphone) {
+      display: none;
+    }
 
     a {
       text-decoration: none;

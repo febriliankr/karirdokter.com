@@ -10,7 +10,11 @@ function Quiz() {
   //console.log("questionsBank", questionsBank);
 
   return (
-    <div className="home__container">
+    <div className="quiz__container">
+    
+    <div className="quiz__heading">
+    <h1>Specialty Quiz</h1>
+    </div>
       <section>
         {Object.keys(questionsBank).map((index, question) => {
           //console.log("question", questionsBank[index].options);
