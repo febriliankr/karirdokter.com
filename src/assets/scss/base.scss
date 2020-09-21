@@ -1,12 +1,13 @@
-@import './_variables';
+@import "./__variables";
 
-@import './_navigation';
-@import './_button';
-@import './_page-container';
+@import "./__navigation";
+@import "./__button";
+@import "./__home";
+@import "./__question";
 
 body {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    margin: 0;
-    background-color: #fcfcfc;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  background-color: #fcfcfc;
 }

@@ -1,27 +1,29 @@
 import React, { useState } from "react";
 import Question from "../components/Question";
-import questions from "./data/quizData";
+import questionsBank from "./data/quizData";
 
 function Quiz() {
   const [answers, setAnswers] = useState({
     1: "",
   });
 
-  //console.log("questions", questions);
+  //console.log("questionsBank", questionsBank);
 
   return (
     <div className="home__container">
       <section>
-        {Object.keys(questions).map((index, question) => {
-          //console.log("question", questions[index].options);
-          const specificOptions = questions[index].options;
+        {Object.keys(questionsBank).map((index, question) => {
+          //console.log("question", questionsBank[index].options);
+          const specificOptions = questionsBank[index].options;
           return (
             <>
               <Question
                 answers={answers}
                 setAnswers={setAnswers}
+                section={questionsBank[index].section}
+                description={questionsBank[index].description}
                 number={index}
-                question={questions[index].question}
+                question={questionsBank[index].question}
                 options={specificOptions}
               />
             </>

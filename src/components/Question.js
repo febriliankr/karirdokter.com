@@ -1,40 +1,55 @@
 import React, { useState } from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 
-function Question({ number, question, options, setAnswers, answers }) {
-
+function Question({
+  number,
+  question,
+  options,
+  setAnswers,
+  answers,
+  section,
+  description,
+}) {
   const [selected, setSelected] = useState(false);
 
-  function handleClick (number, option) {
+  function handleClick(number, option) {
     console.log("answer", number, ": ", option);
     setAnswers({
       ...answers,
       [number]: option,
     });
     setSelected(true);
-    console.log('answers', answers)
-  };
+    console.log("answers", answers);
+  }
 
-  const currentNumber = parseInt(number, 10)+1;
+  const currentNumber = parseInt(number, 10) + 1;
 
   return (
     <div className="question__container">
-      <div 
-      className={`question__number ${selected ? `` : null}`}
-      >Question {currentNumber} {
-        selected ? <span className="answered"><AiFillCheckCircle/></span> : null
-      }</div>
+      <div className={`question__number ${selected ? `` : null}`}>
+        {section}{" "}
+        {selected ? (
+          <span className="answered">
+            <AiFillCheckCircle />
+          </span>
+        ) : (
+          ""
+        )}
+      </div>
       <h2 className="question__title">{question}</h2>
+      {description ? <div className="question__description">{description}</div> : null}
+
       <div className="options-container">
         {Object.keys(options).map((index, value) => {
-
-          console.log('answer:', answers[currentNumber]);
-
           return (
-            <div 
-            key={index} 
-            onClick={() => handleClick(currentNumber, options[value])} 
-            className={`option ${answers[currentNumber] === options[value] ? 'option-active' : null}`}>
+            <div
+              key={index}
+              onClick={() => handleClick(currentNumber, options[value])}
+              className={`option ${
+                answers[currentNumber] === options[value] ? "option-active" : ""
+              }
+            ${section === "Section 1" ? "smallasf" : "wideasf"}`}
+            >
               {options[value]}
             </div>
           );
