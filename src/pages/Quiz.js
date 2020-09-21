@@ -3,9 +3,8 @@ import Question from "../components/Question";
 import questions from "./data/quizData";
 
 function Quiz() {
-
   const [answers, setAnswers] = useState({
-    1: ''
+    1: "",
   });
 
   //console.log("questions", questions);
@@ -13,7 +12,6 @@ function Quiz() {
   return (
     <div className="home__container">
       <section>
-        
         {Object.keys(questions).map((index, question) => {
           //console.log("question", questions[index].options);
           const specificOptions = questions[index].options;
@@ -30,7 +28,10 @@ function Quiz() {
           );
         })}
 
-        {JSON.stringify(answers)}
+        <div className="question__container">
+        <h2>Output for Debugging</h2>
+          <div className="options-container">{JSON.stringify(answers)}</div>
+        </div>
       </section>
     </div>
   );
