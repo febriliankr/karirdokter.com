@@ -36,7 +36,7 @@ function Quiz() {
 
         <div className="question__container">
         <h2>Output for Debugging</h2>
-          <div className="options-container">{JSON.stringify(answers)}</div>
+          <div className="dummy-debug">{JSON.stringify(answers)}</div>
         </div>
       </section>
     </div>

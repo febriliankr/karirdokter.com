@@ -15,6 +15,11 @@
 
     .links {
       display: flex;
+
+      @media (max-width: $breakpoint-tablet) {
+        flex-direction: column;
+      }
+
       a {
         color: $text-link;
         text-decoration: none;
@@ -24,8 +29,11 @@
         &:hover {
           text-decoration: underline;
         }
+
+        @media (max-width: $breakpoint-tablet) {
+          margin-bottom: 10px;
+        }
       }
     }
   }
 }
-
