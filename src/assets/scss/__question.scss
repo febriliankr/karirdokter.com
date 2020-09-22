@@ -1,7 +1,7 @@
 .question__container {
   color: $text-color;
   border-radius: 5px;
-  border: 2px solid #f3f3f3;
+  border: 1.5px solid #f3f3f3;
   background-color: #ffffff;
   text-align: left;
   width: 800px;
@@ -21,7 +21,7 @@
   .question__title {
     margin: 10px 0 10px;
     padding: 10px auto 10px;
-    font-weight: 500;
+    font-weight: 400;
     @media (max-width: $breakpoint-iphone) {
       font-weight: 400;
     }
@@ -97,5 +97,7 @@
 .dummy-debug{
   @media (max-width: $breakpoint-iphone) {
     max-width: 80%;
+    font-size: 9px;
   }
+  margin-bottom: 30px;
 }

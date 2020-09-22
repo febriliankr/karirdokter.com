@@ -194,6 +194,105 @@ const questions = [
     question: "Berapa jam anda ingin bekerja dalam satu hari?",
     options: ["6 jam", "7 jam", "8 jam", "9 jam"],
   },
+  {
+    section: "Section 4",
+    question: "Apakah kamu suka praktik di rumah sakit/klinik pribadi?",
+    options: ["Praktik di klinik pribadi", "Banyak praktik di klinik pribadi, sedikit praktik di rumah sakit", "Sedikit praktik di klinik pribadi, banyak praktik di rumah sakit", "Praktik di rumah sakit"],
+  },
+  {
+    section: "Section 4",
+    question: "Kamu suka merawat pasien seperti apa?",
+    options: ["Memberikan pengobatan", "Melakukan bedah", "Melakukan keduanya", "Tindakan tidak langsung"], 
+  },
+  // BEGIN SECTION 5
+  {
+    section: "Section 5A",
+    question: "Apakah faktor paling penting yang mempengaruhi kamu dalam memilih spesialis?",
+    options: ["Beban kerja", "Prospek kerja", "Kontak dengan pasien", "Terlibat dalam penelitian"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu ingin bekerja rumah sakit dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+    description: '(1 = rendah, 3 = tinggi)',
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan tindakan medis dalam memilih spesialis",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan hasil pasti dari intervensi dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan fleksibilitas dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan jadwal kerja yang santai dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan keinginan untuk melakukan penelitian dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan permasalahan pasien yang luas dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan hubungan sosial dengan orang lain dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan promosi/prevensi kesehatan dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan pengalaman dalam suatu bidang dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan role model dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan kecocokan dengan karir dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan penghasilan dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan status sosial dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  {
+    section: "Section 5B",
+    question: "Dari skala 1-3, Apakah kamu mempertimbangkan keamanan finansial dalam memilih spesialis?",
+    options: ["1", "2", "3"], 
+  },
+  //Dari skala 1-3, Apakah kamu mempertimbangkan waktu bersama keluarga dalam memilih spesialis?
+
+  //
+  
+  
+  
 ];
 
 export default questions;
